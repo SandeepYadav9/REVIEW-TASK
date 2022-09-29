@@ -1,0 +1,57 @@
+.home-container {
+  margin: 5rem auto;
+  width: 95%;
+  max-width: 55rem;
+  text-align: center;
+}
+.home-review {
+  overflow: hidden;    
+}
+.home-review img {
+  width: 10%;
+  height: 10%;
+  border-radius: 50%;
+  border: none;
+}
+.home-review-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: justify;
+  overflow: hidden;
+  box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.3);
+}
+
+.home-list {
+  margin-left: 1rem;
+}
+.home-list h4 {
+  margin-top: 10px;
+}
+.review {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.review-rating {
+  display: flex;
+
+  text-align: center;
+}
+.review button {
+  text-align: left;
+  padding: 0.5rem 2rem;
+  cursor: pointer;
+  border: none;
+  background-color: orange;
+  color: black;
+  border-radius: 4px;
+
+}
+.review button:hover{
+    background-color: darkorange;   
+    color: white;
+    transition: 5s;
+   
+}
