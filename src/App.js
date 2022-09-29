@@ -1,12 +1,12 @@
 import React, { Fragment } from "react";
 import Header from "./components/Header/Header";
-import AppNavigator from './Navigator/AppNavigator'
+import AppNavigator from "./Navigator/AppNavigator";
 const App = () => {
   return (
     <Fragment>
       <Header />
       <div>
-     <AppNavigator/>
+        <AppNavigator />
       </div>
     </Fragment>
   );

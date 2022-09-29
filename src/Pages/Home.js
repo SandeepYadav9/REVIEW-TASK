@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Banner from "../components/Banner/Banner";
 import "./Home.css";
 const Home = () => {
   const [reviewLists, setReviewLists] = useState([]);
@@ -21,6 +22,7 @@ const Home = () => {
 
   return (
     <div className="home-container">
+       <Banner/>
       <h3>Review</h3>
       <div className="home-review">
         {reviewLists.map((review) => {

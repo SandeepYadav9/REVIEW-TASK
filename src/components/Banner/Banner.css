@@ -1,0 +1,39 @@
+.banner-container {
+  margin: 4rem auto;
+  text-align: center;
+}
+.banner-cards {
+  display: flex;
+  justify-content: space-evenly;
+}
+.banner-card-inner-name {
+  position: relative;
+}
+.banner-card-inner-name img { 
+  height: 100%;
+}
+.city-image {
+  width: 100%;
+}
+.overlay {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+}
+.banner-card-inner-name:hover .overlay {
+  opacity: 1;
+}
+.overlay span {
+  position: relative;
+  top: 45%;
+}
+.banner-review{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 27px;
+}
