@@ -7,19 +7,13 @@ const Banner = () => {
         <div className="banner-card-inner-name">
           <img
             className="city-image"
-            src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg"
+            src="https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg"
             alt="Banner"
           />
           <div className="overlay">
             <span>Behrouz Biryani (South Extension)</span> <br />
-            <span>Biryani</span> <br />
-            <div className="banner-review">
-                    {Array(3)
-                      .fill()
-                      .map((_) => (
-                        <p>⭐</p>
-                      ))} (23)
-                  </div>
+            <span>Biryani</span>  <br />
+            <span>⭐⭐⭐⭐(23) </span>          
           </div>
         </div>
       </div>

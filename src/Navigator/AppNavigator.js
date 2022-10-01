@@ -4,6 +4,7 @@ import Login from '../components/Auth/Login'
 import Signup from '../components/Auth/Signup'
 import Home from '../Pages/Home'
 
+
 const AppNavigator = () => {
   return (
     <Routes>

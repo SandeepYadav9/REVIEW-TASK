@@ -7,7 +7,7 @@ const Header = () => {
       <span>Review</span>
       <div className="header-right">      
         <NavLink to="/login">Login</NavLink>       
-      </div>
+      </div>    
     </div>
   );
 };

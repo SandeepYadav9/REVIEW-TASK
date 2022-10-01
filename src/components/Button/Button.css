@@ -1,0 +1,17 @@
+.home-actions{
+    display: flex;
+    position: absolute;
+}
+.home-actions button{
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+    border: none;
+    background-color: lightgray;
+    font-size: larger;
+    margin:0.3px;
+    border-radius: 4px;
+}
+.home-actions button:hover{
+    background-color: gray;
+    color: white;
+}

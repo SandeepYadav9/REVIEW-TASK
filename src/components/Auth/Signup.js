@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import UserInput from "./hooks/User-Input";
-import  "./Signup.css";
+import "./Signup.css";
 
 const Signup = () => {
   const navigate = useNavigate();
@@ -14,7 +14,6 @@ const Signup = () => {
     nameIsValid: validFristName,
     reset: resetFristNameHandler,
   } = UserInput((value) => value.length > 0);
-
 
   const {
     value: email,
@@ -36,18 +35,18 @@ const Signup = () => {
 
   const submitHandler = async (e) => {
     e.preventDefault();
-    if (!validEmail && !validFristName && validPassword ) {
+    if (!validEmail && !validFristName && validPassword) {
       return;
     }
 
-    navigate("/login", { replace: true }); 
+    navigate("/login", { replace: true });
     resetFristNameHandler();
-    resetEmailHandler();   
+    resetEmailHandler();
     resetPasswordrHandler();
   };
 
   useEffect(() => {
-    if (validEmail && validFristName && validPassword ) {
+    if (validEmail && validFristName && validPassword) {
       setFormIsValid(true);
     } else {
       setFormIsValid(false);
@@ -57,10 +56,10 @@ const Signup = () => {
   return (
     <div className="signup-container">
       <h3>Create Account</h3>
-      <form  onSubmit={submitHandler}>
+      <form onSubmit={submitHandler}>
         <div className="input-signup">
           <label htmlFor="fname">Full Name</label>
-          <input          
+          <input
             type="text"
             id="fname"
             placeholder="Full Name EX. Sandeep Yadav "
@@ -68,8 +67,10 @@ const Signup = () => {
             onChange={onFristNameChangeHandler}
             onBlur={fristnameBlurHandler}
           />
-          {invalidFristName && <p className="signup-error">Please enter a Fname</p>}
-        </div>       
+          {invalidFristName && (
+            <p className="signup-error">Please enter a Fname</p>
+          )}
+        </div>
         <div className="input-signup">
           <label htmlFor="email">Email </label>
           <input
@@ -107,8 +108,6 @@ const Signup = () => {
       <footer>
         <p>
           Already have an account ?<NavLink to="/login"> Login </NavLink>{" "}
-          <br />
-          <NavLink to="/">Back To Home</NavLink>
         </p>
       </footer>
     </div>
